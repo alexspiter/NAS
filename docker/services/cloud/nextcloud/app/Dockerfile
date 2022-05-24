@@ -1,7 +1,7 @@
 FROM nextcloud:21-fpm
 
 #        supervisor \
-RUN echo "deb http://ftp.debian.org/debian stretch main" >> /etc/apt/sources.list \
+RUN echo "deb http://ftp.debian.org/debian stretch-updates main" >> /etc/apt/sources.list \
     && apt-get update && apt-get install --no-install-recommends -y \
         aria2 \
         ffmpeg \
